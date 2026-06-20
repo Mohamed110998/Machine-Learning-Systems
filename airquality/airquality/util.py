@@ -82,6 +82,7 @@ def get_hourly_weather_forecast(city, latitude, longitude):
         "longitude": longitude,
         "hourly": ["temperature_2m", "precipitation", "wind_speed_10m", "wind_direction_10m"]
     }
+    # 7 days is the default number of forecast days
     responses = openmeteo.weather_api(url, params=params)
 
     # Process first location. Add a for-loop for multiple locations or weather models
