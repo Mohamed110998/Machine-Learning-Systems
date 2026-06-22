@@ -25,7 +25,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install -r notebooks/airquality/requirements.txt
+          pip install -r airquality/requirements.txt
 
       - name: execute python workflows from bash script
         env:
